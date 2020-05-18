@@ -14,11 +14,11 @@ class Neuron:
         self.function = activationFunction()
 
     def activationFunc(self,i):
-        suma = 0
+        self.suma = 0
         for j in range(0,len(self.inputs[i])):
-            suma += (self.inputs[i][j] * self.weights[j])
-        print("\tSuma antes de la función de activación: ",suma)
-        self.activation = self.function.signFunction(suma)
+            self.suma += (self.inputs[i][j] * self.weights[j])
+        print("\tSuma antes de la función de activación: ",self.suma)
+        self.activation = self.function.signFunction(self.suma)
         self.__fillOutputs()
 
     def __fillOutputs(self):
