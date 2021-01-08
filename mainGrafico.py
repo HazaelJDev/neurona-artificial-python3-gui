@@ -1,7 +1,7 @@
 from Neurona import Neuron
 from tkinter import ttk
 from tkinter import *
-"""@aurhor: Hazael Jiménez"""
+"""@author: Hazael Jiménez"""
 
 class App:
     def __init__(self, window):
